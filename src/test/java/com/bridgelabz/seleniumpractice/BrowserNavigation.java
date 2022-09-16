@@ -1,19 +1,15 @@
-package com.bridgelabz.facebook;
+package com.bridgelabz.seleniumpractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class BrowserNavigation {
 
     @Test
     public void launch() throws InterruptedException {
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver.exe");
-//        WebDriver driver = new ChromeDriver();
-
-        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         Thread.sleep(2000);
         driver.get("https://www.facebook.com/");
@@ -53,3 +49,5 @@ public class BrowserNavigation {
         driver.close();
     }
 }
+
+

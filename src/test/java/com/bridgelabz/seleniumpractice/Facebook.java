@@ -1,4 +1,4 @@
-package com.bridgelabz.facebook;
+package com.bridgelabz.seleniumpractice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
